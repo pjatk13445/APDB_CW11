@@ -1,0 +1,42 @@
+GET  https://localhost:5001/api/seed
+Accept: application/json
+
+###
+
+GET  https://localhost:5001/api/doctors
+Accept: application/json
+
+
+###
+
+POST  https://localhost:5001/api/doctors
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstName": "Arkadiusz",
+  "lastName": "Testowy",
+  "Email": "atestowy@dok.gov"
+}
+
+###
+
+DELETE  https://localhost:5001/api/doctors/10
+Accept: application/json
+Content-Type: application/json
+
+
+###
+
+PUT  https://localhost:5001/api/doctors
+Accept: application/json
+Content-Type: application/json
+
+{
+  "IdDoctor": 11,
+  "firstName": "Arkadiusz",
+  "lastName": "TestowyModified",
+  "Email": "atestowy@dok.gov"
+}
+
+###
